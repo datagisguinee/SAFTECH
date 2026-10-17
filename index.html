@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SAFTECH Infrastructures | Technologies pour les infrastructures en Afrique</title>
+<meta name="description" content="SAFTECH Infrastructures, intégrateur de technologies basé à Abidjan : cartographie et SIG, topographie, services drone, BIM et jumeaux numériques, ingénierie, formation et location d'équipements.">
+<meta name="theme-color" content="#0A2E86">
+<link rel="canonical" href="https://www.saftech-infrastructures.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="SAFTECH Infrastructures">
+<meta property="og:description" content="Données terrain, cartographie, drone, BIM et jumeaux numériques pour des infrastructures plus sûres, plus intelligentes et plus durables en Afrique.">
+<meta property="og:image" content="https://www.saftech-infrastructures.com/assets/img/og.jpg">
+<meta property="og:url" content="https://www.saftech-infrastructures.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SAFTECH Infrastructures",
+  "alternateName": "Société Africaine de Technologies pour les Infrastructures",
+  "url": "https://www.saftech-infrastructures.com/",
+  "logo": "https://www.saftech-infrastructures.com/assets/img/apple-touch-icon.png",
+  "image": "https://www.saftech-infrastructures.com/assets/img/og.jpg",
+  "email": "contact@saftech-infrastructures.com",
+  "telephone": "+225 01 00 66 63 63",
+  "foundingDate": "2025",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cocody Angré 8e tranche, immeuble MTS (rez-de-chaussée), incubateur INTERLAB",
+    "postOfficeBoxNumber": "08 BP 1430 Abidjan 08",
+    "addressLocality": "Abidjan",
+    "addressCountry": "CI"
+  },
+  "areaServed": "Afrique",
+  "description": "Intégrateur de technologies au service des infrastructures physiques : cartographie et SIG, topographie, drone, BIM et jumeaux numériques, ingénierie et contrôle, formation et équipements."
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-7.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+    <symbol id="i-hardhat" viewBox="0 0 24 24"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+    <symbol id="i-tower" viewBox="0 0 24 24"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+    <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M22 12h-4"/><path d="M6 12H2"/><path d="M12 6V2"/><path d="M12 22v-4"/></symbol>
+    <symbol id="i-drone" viewBox="0 0 24 24"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="m7 7 2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header" id="haut">
+  <div class="wrap header-inner">
+    <a class="brand" href="#accueil" aria-label="SAFTECH Infrastructures, retour en haut de page">
+      <img src="assets/img/logo-light-bg.webp" alt="" width="54" height="48">
+      <span class="brand-text"><strong>SAFTECH</strong><span>Infrastructures</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#a-propos">À propos</a>
+      <a href="#offres">Nos offres</a>
+      <a href="#expertises">Expertises</a>
+      <a href="#ingenierie">Ingénierie</a>
+      <a href="#accompagnement">Accompagnement</a>
+      <a href="#secteurs">Secteurs</a>
+      <a class="btn btn-primary nav-cta" href="#contact">Parlons de votre projet</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+      <svg class="i"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <canvas class="hero-contours" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow-light">Société Africaine de Technologies pour les Infrastructures</p>
+      <h1>Intégrateur de technologies au service des infrastructures physiques</h1>
+      <p class="lead">Données terrain, cartographie, drone, BIM et jumeaux numériques : nous aidons entreprises, collectivités et États africains à concevoir, construire et exploiter des infrastructures plus sûres, plus intelligentes et plus durables.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="#contact">Demander un devis <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#offres">Découvrir nos 9 offres</a>
+      </div>
+      <ul class="chips" aria-label="Nos domaines">
+        <li>Cartographie &amp; SIG</li>
+        <li>Topographie</li>
+        <li>Services drone</li>
+        <li>BIM &amp; jumeaux numériques</li>
+        <li>Ingénierie &amp; contrôle</li>
+        <li>Formation &amp; équipements</li>
+      </ul>
+    </div>
+    <figure class="hero-media">
+      <img src="assets/img/hero.webp" alt="Techniciens SAFTECH consultant une maquette numérique superposée à un chantier" width="1600" height="798" fetchpriority="high">
+      <figcaption class="coords"><span>05°21′N · 03°59′O</span><span>Abidjan, Côte d'Ivoire</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- QUI SOMMES-NOUS -->
+<section class="section" id="a-propos">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="eyebrow">Qui sommes-nous</p>
+      <h2>Un partenaire technique ancré en Afrique</h2>
+      <p><strong>SAFTECH INFRASTRUCTURES</strong> (Société Africaine de Technologies pour les Infrastructures) est une entreprise de droit ivoirien fondée en 2025 et basée à Abidjan.</p>
+      <p>Nous sommes convaincus que les technologies de pointe permettent de bâtir des infrastructures plus sûres, plus intelligentes et plus durables : bâtiments, routes, réseaux électriques, télécommunications.</p>
+      <p>Nous accompagnons nos clients à chaque étape de leurs projets, de la conception à l'exploitation. Nos solutions sont sur mesure, accessibles et rentables. Elles allient technologies de pointe et expertise locale.</p>
+      <div class="mv">
+        <div class="mv-card">
+          <h3>Notre mission</h3>
+          <p>Rendre les technologies de pointe accessibles aux acteurs des infrastructures en Afrique, et développer avec eux des solutions innovantes adaptées à leurs réalités.</p>
+        </div>
+        <div class="mv-card mv-dark">
+          <h3>Notre vision</h3>
+          <p>Être le partenaire technique de référence pour bâtir des infrastructures durables en Afrique.</p>
+        </div>
+      </div>
+    </div>
+    <figure class="about-media">
+      <img src="assets/img/about.webp" alt="Ingénieure SAFTECH en tenue de chantier, tablette en main" width="750" height="900" loading="lazy">
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <h3 class="sub-title">Nos valeurs</h3>
+    <ul class="values">
+      <li><svg class="i"><use href="#i-heart"/></svg><strong>Sens du service</strong><span>Vos objectifs guident notre travail.</span></li>
+      <li><svg class="i"><use href="#i-zap"/></svg><strong>Efficacité</strong><span>Des résultats concrets, dans les délais.</span></li>
+      <li><svg class="i"><use href="#i-shuffle"/></svg><strong>Adaptabilité</strong><span>Des solutions ajustées à chaque terrain et budget.</span></li>
+      <li><svg class="i"><use href="#i-bulb"/></svg><strong>Innovation</strong><span>Une veille constante sur les technologies utiles.</span></li>
+      <li><svg class="i"><use href="#i-shield"/></svg><strong>Responsabilité</strong><span>Sécurité, qualité et impact durable.</span></li>
+    </ul>
+
+    <h3 class="sub-title">Pour qui travaillons-nous ?</h3>
+    <ul class="audiences">
+      <li><svg class="i"><use href="#i-hardhat"/></svg><div><strong>Entreprises du BTP</strong><span>Bureaux d'études, entreprises de travaux, promoteurs.</span></div></li>
+      <li><svg class="i"><use href="#i-landmark"/></svg><div><strong>Collectivités</strong><span>Communes, districts et régions.</span></div></li>
+      <li><svg class="i"><use href="#i-flag"/></svg><div><strong>États et agences</strong><span>Ministères, agences et projets publics.</span></div></li>
+      <li><svg class="i"><use href="#i-tower"/></svg><div><strong>Opérateurs</strong><span>Énergie, télécoms, mines et industrie.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- APPROCHE -->
+<section class="section section-tint" id="approche">
+  <div class="wrap">
+    <p class="eyebrow">Notre approche</p>
+    <h2>De la donnée terrain à la décision</h2>
+    <p class="intro">Nos services s'enchaînent en une seule chaîne de valeur. Vous pouvez nous confier une étape précise ou le projet de bout en bout.</p>
+    <ol class="chain">
+      <li><span class="chain-n">1</span><svg class="i"><use href="#i-scan"/></svg><h3>Capter</h3><p>Topographie, drone, scan laser 3D, capteurs IoT.</p></li>
+      <li><span class="chain-n">2</span><svg class="i"><use href="#i-layers"/></svg><h3>Structurer</h3><p>Bases de données SIG, maquettes BIM, géoréférencement.</p></li>
+      <li><span class="chain-n">3</span><svg class="i"><use href="#i-monitor"/></svg><h3>Valoriser</h3><p>Jumeaux numériques, webmapping, applications.</p></li>
+      <li><span class="chain-n">4</span><svg class="i"><use href="#i-users"/></svg><h3>Accompagner</h3><p>Formation, assistance technique, équipements.</p></li>
+    </ol>
+
+    <h3 class="sub-title">Nos métiers</h3>
+    <ul class="trades">
+      <li><svg class="i"><use href="#i-wrench"/></svg><div><strong>Assistance technique</strong><span>Études, mesures, supervision et conseil.</span></div></li>
+      <li><svg class="i"><use href="#i-cap"/></svg><div><strong>Formation sur mesure</strong><span>Montée en compétences de vos équipes.</span></div></li>
+      <li><svg class="i"><use href="#i-search"/></svg><div><strong>Recherche &amp; développement</strong><span>Solutions numériques adaptées au contexte africain.</span></div></li>
+      <li><svg class="i"><use href="#i-briefcase"/></svg><div><strong>Location &amp; vente</strong><span>Drones, stations, scanners et logiciels.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9 OFFRES -->
+<section class="section" id="offres">
+  <div class="wrap">
+    <p class="eyebrow">Nos 9 offres en un coup d'œil</p>
+    <h2>Une offre complète, du terrain à l'exploitation</h2>
+    <div class="offer-families">
+      <div class="family">
+        <p class="family-label">Expertises phares · Géospatial &amp; numérique</p>
+        <a class="offer" href="#offre-01"><span class="num">01</span><span>Cartographie &amp; SIG</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-02"><span class="num">02</span><span>Topographie opérationnelle</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-03"><span class="num">03</span><span>Services drone</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-04"><span class="num">04</span><span>Transformation digitale</span><svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="family">
+        <p class="family-label">Ingénierie · Contrôle &amp; supervision</p>
+        <a class="offer" href="#offre-05"><span class="num">05</span><span>Inspection &amp; surveillance</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-06"><span class="num">06</span><span>Efficacité énergétique</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-07"><span class="num">07</span><span>ATMO / ATMOE</span><svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="family">
+        <p class="family-label">Transversal · Accompagnement</p>
+        <a class="offer" href="#offre-08"><span class="num">08</span><span>Formations techniques</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="offer" href="#offre-09"><span class="num">09</span><span>Location &amp; vente</span><svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISES PHARES -->
+<section class="section section-tint" id="expertises">
+  <div class="wrap">
+    <p class="eyebrow">Nos expertises phares</p>
+    <h2>Cartographie, topographie, drone et jumeaux numériques</h2>
+
+    <article class="xp" id="offre-01">
+      <figure class="xp-media"><img src="assets/img/sig.webp" alt="Technicien relevant des données terrain avec une tablette et un scanner" width="690" height="588" loading="lazy"></figure>
+      <div class="xp-body">
+        <span class="num num-lg">01</span>
+        <h3>Cartographie &amp; Système d'Information Géographique</h3>
+        <p>Nous transformons vos données de terrain en information géographique fiable, partagée et exploitable pour planifier, gérer et suivre vos réseaux et vos ouvrages.</p>
+        <ul class="benefits">
+          <li>Une vision unique et à jour de votre patrimoine</li>
+          <li>Des décisions fondées sur des données fiables</li>
+          <li>Un partage simple entre services et partenaires</li>
+        </ul>
+        <div class="xp-lists">
+          <div><h4>Nos prestations</h4><ul>
+            <li>Collecte de données terrain (GPS, applications mobiles, enquêtes)</li>
+            <li>Numérisation et géoréférencement de plans existants</li>
+            <li>Conception de bases de données géographiques</li>
+            <li>Webmapping et portails cartographiques</li>
+            <li>Développement de solutions métiers SIG</li>
+            <li>Analyses spatiales et études d'implantation</li>
+          </ul></div>
+          <div><h4>Livrables</h4><ul>
+            <li>Cartes thématiques et atlas</li>
+            <li>Bases de données SIG structurées</li>
+            <li>Plateformes cartographiques en ligne</li>
+            <li>Tableaux de bord géolocalisés</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="xp xp-flip" id="offre-02">
+      <figure class="xp-media"><img src="assets/img/topographie.webp" alt="Topographe utilisant un récepteur GNSS sur le terrain" width="1100" height="734" loading="lazy"></figure>
+      <div class="xp-body">
+        <span class="num num-lg">02</span>
+        <h3>Topographie opérationnelle</h3>
+        <p>Des mesures précises sur le terrain, de l'étude préalable jusqu'à la réception des travaux.</p>
+        <ul class="benefits">
+          <li>Des ouvrages implantés au bon endroit</li>
+          <li>Moins de reprises et de dommages aux réseaux</li>
+          <li>Des quantités de travaux maîtrisées</li>
+        </ul>
+        <div class="xp-lists">
+          <div><h4>Nos prestations</h4><ul>
+            <li>Levés topographiques et altimétriques</li>
+            <li>Implantation d'ouvrages et de réseaux</li>
+            <li>Détection et géolocalisation de réseaux enterrés</li>
+            <li>Contrôles et récolement de travaux</li>
+            <li>Calculs de cubatures</li>
+            <li>Réalisation de plans</li>
+          </ul></div>
+          <div><h4>Livrables</h4><ul>
+            <li>Plans topographiques (DWG, PDF)</li>
+            <li>Modèles numériques de terrain</li>
+            <li>Plans de récolement</li>
+            <li>Rapports de contrôle</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="xp" id="offre-03">
+      <figure class="xp-media"><img src="assets/img/drone.webp" alt="Télépilote SAFTECH pilotant un drone au-dessus d'un site" width="1100" height="733" loading="lazy"></figure>
+      <div class="xp-body">
+        <span class="num num-lg">03</span>
+        <h3>Services drone</h3>
+        <p>Nos drones collectent en quelques heures des données qui demanderaient des jours au sol, sans exposer vos équipes aux zones à risque.</p>
+        <ul class="benefits">
+          <li>Une collecte rapide sur de grandes surfaces</li>
+          <li>Plus de sécurité pour les équipes</li>
+          <li>Un suivi visuel régulier de l'avancement</li>
+        </ul>
+        <div class="xp-lists">
+          <div><h4>Nos prestations</h4><ul>
+            <li>Photos et vidéos aériennes</li>
+            <li>Photogrammétrie (orthophotos, modèles 3D)</li>
+            <li>Lasergrammétrie aérienne (LiDAR)</li>
+            <li>Thermographie (installations solaires, postes, toitures)</li>
+            <li>Inspection d'ouvrages difficiles d'accès</li>
+            <li>Surveillance et sécurité de chantier</li>
+            <li>Agriculture de précision</li>
+          </ul></div>
+          <div><h4>Livrables</h4><ul>
+            <li>Orthophotos géoréférencées</li>
+            <li>Nuages de points et modèles 3D</li>
+            <li>Rapports d'inspection illustrés</li>
+            <li>Vidéos de suivi de chantier</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="xp xp-flip" id="offre-04">
+      <figure class="xp-media"><img src="assets/img/bim.webp" alt="Ingénieurs devant une maquette numérique BIM en réalité augmentée" width="690" height="588" loading="lazy"></figure>
+      <div class="xp-body">
+        <span class="num num-lg">04</span>
+        <h3>Transformation digitale des infrastructures</h3>
+        <p>Nous créons la copie numérique de vos ouvrages pour mieux les concevoir, les présenter et les exploiter.</p>
+        <ul class="benefits">
+          <li>Moins d'erreurs de conception</li>
+          <li>Une maintenance anticipée</li>
+          <li>Des projets mieux présentés et mieux vendus</li>
+        </ul>
+        <div class="xp-lists">
+          <div><h4>Nos prestations</h4><ul>
+            <li>Maquettes numériques BIM</li>
+            <li>Scan laser et modélisation 3D</li>
+            <li>Jumeaux numériques d'ouvrages et de réseaux</li>
+            <li>Capteurs IoT et suivi en temps réel</li>
+            <li>Visites virtuelles immersives 360°</li>
+            <li>Applications web et mobiles sur mesure</li>
+          </ul></div>
+          <div><h4>Livrables</h4><ul>
+            <li>Maquettes BIM (format IFC)</li>
+            <li>Jumeaux numériques consultables en ligne</li>
+            <li>Visites 360° partageables</li>
+            <li>Applications métiers</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- INGENIERIE -->
+<section class="section" id="ingenierie">
+  <div class="wrap">
+    <p class="eyebrow">Ingénierie &amp; contrôle</p>
+    <h2>Des ouvrages contrôlés, performants et bien suivis</h2>
+    <p class="intro">Nos ingénieurs interviennent sur vos ouvrages existants comme sur vos chantiers en cours, pour sécuriser vos investissements.</p>
+    <div class="eng-grid">
+      <article class="eng" id="offre-05">
+        <img src="assets/img/inspection.webp" alt="Station de mesure installée sur une voie ferrée" width="700" height="525" loading="lazy">
+        <div class="eng-body">
+          <span class="num">05</span>
+          <h3>Inspection &amp; surveillance d'ouvrages</h3>
+          <p>Nous suivons l'état de vos ouvrages pour détecter les désordres avant qu'ils ne deviennent coûteux.</p>
+          <ul class="dash">
+            <li>Auscultation de bâtiments, ponts, barrages et pylônes</li>
+            <li>Suivi des déformations et des tassements</li>
+            <li>Mesures et contrôles géotechniques</li>
+            <li>Inspection visuelle et par drone</li>
+            <li>Rapports d'état et recommandations</li>
+          </ul>
+          <p class="outcome"><svg class="i"><use href="#i-arrow"/></svg>Une maintenance planifiée plutôt que subie</p>
+        </div>
+      </article>
+      <article class="eng" id="offre-06">
+        <img src="assets/img/energie.webp" alt="Illustration de l'efficacité énergétique d'un bâtiment" width="1000" height="543" loading="lazy">
+        <div class="eng-body">
+          <span class="num">06</span>
+          <h3>Efficacité énergétique</h3>
+          <p>Nous mesurons vos consommations pour réduire votre facture et fiabiliser vos installations électriques.</p>
+          <ul class="dash">
+            <li>Mesures et contrôles électriques</li>
+            <li>Audits énergétiques de bâtiments et de sites industriels</li>
+            <li>Analyse de la qualité de l'énergie</li>
+            <li>Thermographie des installations</li>
+            <li>Plan d'actions d'économies d'énergie</li>
+          </ul>
+          <p class="outcome"><svg class="i"><use href="#i-arrow"/></svg>Des économies identifiées et priorisées</p>
+        </div>
+      </article>
+      <article class="eng" id="offre-07">
+        <img src="assets/img/atmo.webp" alt="Ingénieurs en réunion de chantier devant un plan" width="1000" height="667" loading="lazy">
+        <div class="eng-body">
+          <span class="num">07</span>
+          <h3>Assistance technique à maîtrise d'ouvrage et d'œuvre (ATMO / ATMOE)</h3>
+          <p>Nous vous assistons à chaque phase de vos projets, aux côtés du maître d'ouvrage ou du maître d'œuvre.</p>
+          <ul class="dash">
+            <li>Conseil et études techniques</li>
+            <li>Appui à la préparation des dossiers techniques</li>
+            <li>Coordination des intervenants</li>
+            <li>Supervision et contrôle de travaux</li>
+            <li>Assistance à la réception des ouvrages</li>
+          </ul>
+          <p class="outcome"><svg class="i"><use href="#i-arrow"/></svg>Des projets tenus en délais, en coûts et en qualité</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ACCOMPAGNEMENT -->
+<section class="section section-tint" id="accompagnement">
+  <div class="wrap">
+    <p class="eyebrow">Accompagnement</p>
+    <h2>Des équipes formées et bien équipées</h2>
+    <div class="support-grid">
+      <article class="support" id="offre-08">
+        <img src="assets/img/formation.webp" alt="Formateur SAFTECH présentant des statistiques à une équipe" width="999" height="510" loading="lazy">
+        <div class="support-body">
+          <span class="num">08</span>
+          <h3>Formations techniques sur mesure</h3>
+          <p>Nous transmettons nos savoir-faire à vos équipes pour qu'elles gagnent en autonomie sur leurs propres projets.</p>
+          <h4>Thèmes</h4>
+          <ul class="tags">
+            <li>SIG et cartographie</li>
+            <li>Topographie et GNSS</li>
+            <li>Pilotage de drone et photogrammétrie</li>
+            <li>BIM et modélisation 3D</li>
+            <li>Jumeaux numériques et visites 360°</li>
+          </ul>
+          <p class="formula"><strong>Formats :</strong> en salle ou sur site, sur vos propres données, avec un suivi après la formation.</p>
+        </div>
+      </article>
+      <article class="support" id="offre-09">
+        <img src="assets/img/equipements.webp" alt="Scanner laser 3D sur trépied utilisé sur un chantier" width="440" height="588" loading="lazy">
+        <div class="support-body">
+          <span class="num">09</span>
+          <h3>Location &amp; vente d'équipements</h3>
+          <p>Accédez aux équipements dont vous avez besoin, avec ou sans opérateur, sans immobiliser votre trésorerie.</p>
+          <h4>Équipements</h4>
+          <ul class="tags">
+            <li>Drones professionnels</li>
+            <li>Stations totales et récepteurs GNSS</li>
+            <li>Scanners laser 3D</li>
+            <li>Détecteurs de réseaux enterrés</li>
+            <li>Casques de réalité virtuelle et logiciels</li>
+          </ul>
+          <p class="formula"><strong>Formules :</strong> location courte ou longue durée, vente, mise en service et prise en main.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DEMARCHE -->
+<section class="section" id="demarche">
+  <div class="wrap">
+    <p class="eyebrow">Notre démarche</p>
+    <h2>Cinq étapes, de votre besoin à la livraison</h2>
+    <ol class="steps">
+      <li><span>1</span><h3>Écoute</h3><p>Comprendre votre besoin et votre terrain.</p></li>
+      <li><span>2</span><h3>Diagnostic</h3><p>Visite de site et analyse de l'existant.</p></li>
+      <li><span>3</span><h3>Proposition</h3><p>Une offre technique et financière sur mesure.</p></li>
+      <li><span>4</span><h3>Réalisation</h3><p>Intervention et contrôle qualité.</p></li>
+      <li><span>5</span><h3>Livraison &amp; suivi</h3><p>Livrables, formation et accompagnement.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SECTEURS + POURQUOI -->
+<section class="section section-navy" id="secteurs">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light">Nos domaines d'intervention</p>
+    <h2>Huit secteurs, une même exigence</h2>
+    <ul class="sectors">
+      <li><svg class="i"><use href="#i-zap"/></svg><strong>Énergie</strong><span>Réseaux électriques, centrales, postes, solaire.</span></li>
+      <li><svg class="i"><use href="#i-tower"/></svg><strong>Télécoms</strong><span>Pylônes, fibre optique, couverture réseau.</span></li>
+      <li><svg class="i"><use href="#i-route"/></svg><strong>Transport</strong><span>Routes, ponts, voiries urbaines.</span></li>
+      <li><svg class="i"><use href="#i-building"/></svg><strong>Construction</strong><span>Architecture, ingénierie, bâtiments.</span></li>
+      <li><svg class="i"><use href="#i-mountain"/></svg><strong>Mines &amp; carrières</strong><span>Volumes, suivi d'exploitation.</span></li>
+      <li><svg class="i"><use href="#i-factory"/></svg><strong>Industrie</strong><span>Sites industriels, audits énergétiques.</span></li>
+      <li><svg class="i"><use href="#i-home"/></svg><strong>Marketing immobilier</strong><span>Visites 360°, maquettes 3D.</span></li>
+      <li><svg class="i"><use href="#i-cap"/></svg><strong>Éducation</strong><span>Formations techniques.</span></li>
+    </ul>
+
+    <h2 class="why-title" id="pourquoi">Pourquoi choisir SAFTECH ?</h2>
+    <ol class="why">
+      <li><strong>Une chaîne complète</strong><span>De la collecte terrain à l'outil d'aide à la décision.</span></li>
+      <li><strong>Une expertise locale</strong><span>Une équipe basée à Abidjan, qui connaît le terrain.</span></li>
+      <li><strong>Des équipements de pointe</strong><span>Drones, scanners 3D, GNSS, logiciels SIG et BIM.</span></li>
+      <li><strong>Des solutions accessibles</strong><span>Sur mesure, adaptées à votre budget.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section class="section partners-section" id="partenaires">
+  <div class="wrap">
+    <p class="eyebrow">Ils nous font confiance</p>
+    <ul class="partners">
+      <li><img src="assets/img/partners/schiba.webp" alt="Schiba Énergies" loading="lazy"></li>
+      <li><img src="assets/img/partners/ingenium.webp" alt="Ingenium Projects &amp; Services" loading="lazy"></li>
+      <li><img src="assets/img/partners/interlab.webp" alt="InterLab, incubateur de startups" loading="lazy"></li>
+      <li><img src="assets/img/partners/sartp.webp" alt="SARTP" loading="lazy"></li>
+      <li><img src="assets/img/partners/eburtis.webp" alt="Eburtis" loading="lazy"></li>
+      <li><img src="assets/img/partners/sepic.webp" alt="SEP Ingénierie &amp; Conseils" loading="lazy"></li>
+      <li><img src="assets/img/partners/optimum.webp" alt="Optimum Solutions" loading="lazy"></li>
+      <li><img src="assets/img/partners/iraf.webp" alt="IRAF" loading="lazy"></li>
+      <li><img src="assets/img/partners/aiec.webp" alt="A.I.E.C." loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-tint" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Contact</p>
+      <h2>Parlons de votre projet</h2>
+      <p>Décrivez-nous votre besoin : nous revenons vers vous avec une première analyse et une proposition adaptée.</p>
+      <ul class="coords-list">
+        <li><svg class="i"><use href="#i-phone"/></svg><div><span class="label">Téléphone</span><a href="tel:+2250100666363">+225 01 00 66 63 63</a></div></li>
+        <li><svg class="i"><use href="#i-mail"/></svg><div><span class="label">E-mail</span><a href="mailto:contact@saftech-infrastructures.com">contact@saftech-infrastructures.com</a></div></li>
+        <li><svg class="i"><use href="#i-pin"/></svg><div><span class="label">Adresse</span><span>Hébergés par l'incubateur INTERLAB · Abidjan, Cocody Angré 8e tranche, immeuble MTS (rez-de-chaussée), près des résidences Niablé · 08 BP 1430 Abidjan 08</span><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Immeuble+MTS+Cocody+Angr%C3%A9+8e+tranche+Abidjan" target="_blank" rel="noopener">Voir sur la carte</a></div></li>
+        <li><svg class="i"><use href="#i-globe"/></svg><div><span class="label">Site web</span><span>www.saftech-infrastructures.com</span></div></li>
+      </ul>
+      <div class="contact-actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/2250100666363?text=Bonjour%20SAFTECH%2C%20je%20souhaite%20vous%20parler%20d%27un%20projet." target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Écrire sur WhatsApp</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="field">
+        <label for="f-nom">Nom et prénom</label>
+        <input id="f-nom" name="nom" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-org">Organisation</label>
+        <input id="f-org" name="organisation" type="text" autocomplete="organization">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-tel">Téléphone</label>
+          <input id="f-tel" name="telephone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-besoin">Votre besoin</label>
+        <select id="f-besoin" name="besoin">
+          <option>Cartographie &amp; SIG</option>
+          <option>Topographie opérationnelle</option>
+          <option>Services drone</option>
+          <option>Transformation digitale (BIM, jumeaux numériques)</option>
+          <option>Inspection &amp; surveillance d'ouvrages</option>
+          <option>Efficacité énergétique</option>
+          <option>ATMO / ATMOE</option>
+          <option>Formations techniques</option>
+          <option>Location &amp; vente d'équipements</option>
+          <option>Autre demande</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="5" required placeholder="Lieu, nature de l'ouvrage, calendrier souhaité…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Envoyer ma demande <svg class="i"><use href="#i-arrow"/></svg></button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo-dark-bg.webp" alt="SAFTECH Infrastructures" width="90" height="80" loading="lazy">
+      <p>Société Africaine de Technologies pour les Infrastructures · Abidjan, Côte d'Ivoire</p>
+    </div>
+    <nav class="footer-nav" aria-label="Liens du pied de page">
+      <a href="#a-propos">À propos</a>
+      <a href="#offres">Nos offres</a>
+      <a href="#secteurs">Secteurs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <!-- À COMPLÉTER : remplacer "#" par les adresses exactes des pages LinkedIn et Facebook -->
+      <a href="#" aria-label="SAFTECH Infrastructures sur LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+      <a href="#" aria-label="SAFTECH Infrastructures sur Facebook"><svg class="i"><use href="#i-facebook"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> SAFTECH INFRASTRUCTURES. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250100666363" target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp"><svg class="i"><use href="#i-chat"/></svg></a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
