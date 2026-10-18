@@ -190,6 +190,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .values { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--rule); }
 .values li { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px 4px 0; }
 .values li + li { padding-left: 20px; border-left: 1px solid var(--rule); }
+.values .i { width: 32px; height: 32px; color: var(--blue); margin-bottom: 6px; }
 .values strong { font-family: var(--font-display); color: var(--navy); font-size: 1.1rem; font-stretch: 110%; }
 .values span { color: var(--ink-soft); font-size: .95rem; }
 
