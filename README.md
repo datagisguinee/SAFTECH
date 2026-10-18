@@ -9,7 +9,6 @@ Site statique (HTML, CSS, JavaScript), sans outil de build. Ouvre `index.html` d
 - `assets/img/` : photos, logos et logos partenaires extraits de la plaquette, en WebP.
 
 ## À compléter avant la mise en ligne
-- Liens LinkedIn et Facebook dans le pied de page (`href="#"`, repérés par un commentaire « À COMPLÉTER »).
 - Le formulaire ouvre un e-mail pré-rempli vers contact@saftech-infrastructures.com. Pour recevoir les demandes sans passer par la messagerie du visiteur, on peut le brancher sur un service comme Formspree.
 
 ## Mise en ligne
